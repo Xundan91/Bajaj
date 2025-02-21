@@ -14,10 +14,11 @@ function App() {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        data: input.split("")
+        data: input.split(/[\s,]+/) // Split by spaces or commas
+
       })
     });
-
+  
     const data = await response.json();
     setOutput(JSON.stringify(data, null, 2));
   };
