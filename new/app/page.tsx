@@ -14,7 +14,7 @@ function App() {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        data: input.split(/[\s,]+/) // Split by spaces or commas
+        data: input.split(/[\s,]+/) 
 
       })
     });
@@ -33,7 +33,7 @@ function App() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6">
       <h1 className="text-2xl font-bold text-gray-800 mb-4 text-center">
-        Enter array elements as a string (e.g., abc123)
+        Enter array elements as a string (11,12,A,17,B,b)
       </h1>
       <input 
         className="border-2 border-gray-300 rounded-lg p-2 w-80 text-center focus:outline-none focus:ring-2 focus:ring-blue-500"
